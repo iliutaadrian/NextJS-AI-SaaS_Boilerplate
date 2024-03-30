@@ -34,16 +34,16 @@ export function Faq() {
 
   return (
     <div
-      className="md:max-w-5xl mx-auto py-10 flex flex-col md:flex-row"
+      className="md:max-w-5xl mx-auto py-10 flex flex-col lg:flex-row"
       id="faq"
     >
       <div className="basis-1/2">
         <h1 className="text-2xl md:text-4xl text-primary text-center">
           Frequently Asked Questions
         </h1>
-        <h1 className=" font-medium text-center">
+        <p className="font-medium text-center text-muted-foreground">
           Have another question? Contact US on Twitter or by email.
-        </h1>
+        </p>
       </div>
 
       <div className="basis-1/2 px-10">

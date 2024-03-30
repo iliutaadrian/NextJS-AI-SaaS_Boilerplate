@@ -31,12 +31,12 @@ export const Features = () => {
     <div className=" py-10 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className=" font-semibold leading-7 text-primary">
+          <h3 className=" font-semibold leading-7 text-primary">
             {t("dashboard:features.tagline")}
-          </h2>
-          <p className="mt-2 text-3xl font-bold sm:text-4xl">
+          </h3>
+          <h2 className="mt-2 text-3xl font-bold sm:text-4xl">
             {t("dashboard:features.title")}
-          </p>
+          </h2>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             {t("dashboard:features.description")}
           </p>
