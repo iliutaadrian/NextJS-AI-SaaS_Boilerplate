@@ -1,8 +1,9 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import useTranslation from "next-translate/useTranslation";
 
 export const Hero = () => {
+  const { t } = useTranslation();
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
       <div
@@ -20,35 +21,37 @@ export const Hero = () => {
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Grasp the Essence of Any Video in Seconds
-            <a href="#features" className="font-semibold text-primary">
+            {t("dashboard:hero.tagline")}
+            <a href="#features" className="font-semibold text-primary ml-2">
               <span className="absolute inset-0" aria-hidden="true" />
-              Read more <span aria-hidden="true">&rarr;</span>
+              {t("common:buttons.learn-more")}
+              <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
 
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            Unlock the Power of AI Summaries for YouTube Videos
+            {t("dashboard:hero.title")}
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            This will help you when it{"'"}s too much content. It’s an AI
-            YouTube tool which finds the key points in topics like AI, Business,
-            Finance, News, or Health.
+            {t("dashboard:hero.description")}
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="/summary"
               className="text-sm font-semibold leading-6 text-muted-foreground"
             >
-              <Button variant="default">Get started</Button>
+              <Button variant="default">
+                {t("common:buttons.get-started")}
+              </Button>
             </a>
             <a
               href="#features"
               className="text-sm font-semibold leading-6 text-muted-foreground"
             >
-              Learn more <span aria-hidden="true">→</span>
+              {t("common:buttons.learn-more")}
+              <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>

@@ -1,24 +1,25 @@
-import { ServerIcon } from "lucide-react";
+import { LockOpen1Icon } from "@radix-ui/react-icons";
+import { Clock, CloudIcon, Navigation } from "lucide-react";
+import Image from "next/image";
+import useTranslation from "next-translate/useTranslation";
 
 export const Features2 = () => {
+  const { t } = useTranslation();
   const features = [
     {
-      name: "Push to deploy.",
-      description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-      icon: ServerIcon,
+      name: t("dashboard:features_2.feature_1.title"),
+      description: t("dashboard:features_2.feature_1.description"),
+      icon: LockOpen1Icon,
     },
     {
-      name: "SSL certificates.",
-      description:
-        "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-      icon: ServerIcon,
+      name: t("dashboard:features_2.feature_2.title"),
+      description: t("dashboard:features_2.feature_2.description"),
+      icon: CloudIcon,
     },
     {
-      name: "Database backups.",
-      description:
-        "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-      icon: ServerIcon,
+      name: t("dashboard:features_2.feature_3.title"),
+      description: t("dashboard:features_2.feature_3.description"),
+      icon: Navigation,
     },
   ];
   return (
@@ -28,15 +29,13 @@ export const Features2 = () => {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="font-semibold leading-7 text-primary">
-                Deploy faster
+                {t("dashboard:features_2.tagline")}
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-                A better workflow
+                {t("dashboard:features_2.title")}
               </p>
-              <p className="mt-6 text-lg leading-8">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor
-                cupiditate blanditiis ratione.
+              <p className="mt-6 text-lg leading-8 text-muted-foreground">
+                {t("dashboard:features_2.description")}
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-primary leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
@@ -56,8 +55,8 @@ export const Features2 = () => {
               </dl>
             </div>
           </div>
-          <img
-            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+          <Image
+            src="/app2.png"
             alt="Product screenshot"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             width={2432}

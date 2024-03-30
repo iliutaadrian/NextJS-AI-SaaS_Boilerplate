@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
+const nextTranslate = require("next-translate-plugin");
+
+const nextConfig = nextTranslate({
   images: {
-    domains: ["img.youtube.com"],
+    domains: ["img.youtube.com", "images.unsplash.com"],
   },
   webpack: (config) => {
     config.module.rules.push({
@@ -11,6 +13,6 @@ const nextConfig = {
     });
     return config;
   },
-};
+});
 
 module.exports = nextConfig;

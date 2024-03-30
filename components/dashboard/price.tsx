@@ -5,10 +5,14 @@ import { CheckIcon, XIcon } from "lucide-react";
 import axios from "axios";
 import { toast } from "../ui/use-toast";
 import { useUser } from "@clerk/nextjs";
+import useTranslation from "next-translate/useTranslation";
 
 export function Price() {
   const { isSignedIn } = useUser();
+  const { t } = useTranslation("dashboard");
 
+  const items = t("price", { returnObjects: true });
+  console.log(items);
   const prices = [
     {
       name: "Starter",
@@ -17,12 +21,12 @@ export function Price() {
       popular: false,
       facilities_yes: [
         "100 Videos",
-        "TLDR Summaries",
-        "Timestamped Breakdowns",
-        "Key Insights",
-        "Best Quotes",
-        "QA",
-        "40+ Languages",
+        t("price.facilities_yes.0"),
+        t("price.facilities_yes.1"),
+        t("price.facilities_yes.2"),
+        t("price.facilities_yes.3"),
+        t("price.facilities_yes.4"),
+        t("price.facilities_yes.5"),
       ],
       facilities_no: [],
     },
@@ -33,12 +37,12 @@ export function Price() {
       popular: true,
       facilities_yes: [
         "1000 Videos",
-        "TLDR Summaries",
-        "Timestamped Breakdowns",
-        "Key Insights",
-        "Best Quotes",
-        "QA",
-        "40+ Languages",
+        t("price.facilities_yes.0"),
+        t("price.facilities_yes.1"),
+        t("price.facilities_yes.2"),
+        t("price.facilities_yes.3"),
+        t("price.facilities_yes.4"),
+        t("price.facilities_yes.5"),
       ],
       facilities_no: [],
     },
@@ -68,10 +72,8 @@ export function Price() {
 
   return (
     <div className=" md:max-w-5xl mx-auto flex flex-col items-center mb-10">
-      <h1 className="text-2xl md:text-4xl font-bold text-primary text-center">
-        Pricing
-      </h1>
-      <h1 className="text-xl font-medium text-center">
+      <h1 className="text-2xl md:text-4xl font-bold text-center">Pricing</h1>
+      <h1 className="text-xl font-medium text-center text-muted-foreground">
         Conversations Redefined, Boundaries Unleashed
       </h1>
       <div className="mt-4 px-3 text-sm text-center">

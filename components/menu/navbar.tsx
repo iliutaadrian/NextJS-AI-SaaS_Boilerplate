@@ -3,12 +3,13 @@
 import { useUser } from "@clerk/clerk-react";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
-import { useState } from "react";
 import { ModeToggle } from "../mode-toggle";
 import { MobileMenu } from "./mobile-menu";
+import useTranslation from "next-translate/useTranslation";
 
 export const Navbar = () => {
   const { isSignedIn } = useUser();
+  const { t } = useTranslation();
   const navigation = [
     { name: "Summary", href: "/summary" },
     { name: "Summary List", href: "/summary-list" },
@@ -20,7 +21,7 @@ export const Navbar = () => {
         href={"/"}
         className="text-2xl font-bold text-primary min-w-[200px]"
       >
-        Tube Mind Sync
+        {t("common:title")}
       </Link>
       <div className="md:hidden text-muted-foreground">
         <MobileMenu navigation={navigation} />

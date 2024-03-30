@@ -1,21 +1,24 @@
 "use client";
 
-import { CalendarDaysIcon } from "lucide-react";
+import useTranslation from "next-translate/useTranslation";
 
 export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <>
       <footer className="bg-primary/5 text-white pt-10">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-4 gap-8">
           <div>
-            <h1 className="text-3xl text-primary font-bold">Tube Mind Sync</h1>
+            <h1 className="text-3xl text-primary font-medium">
+              {t("common:title")}
+            </h1>
           </div>
           <div>
             <h3 className="font-semibold text-lg mb-4 uppercase">Links</h3>
             <ul className="space-y-2">
               <li>
                 <a className="hover:underline" href="#">
-                  Why Crowdin?
+                  Why Us?
                 </a>
               </li>
             </ul>

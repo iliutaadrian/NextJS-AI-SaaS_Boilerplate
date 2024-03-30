@@ -1,0 +1,108 @@
+{
+  "hero": {
+    "title": "Unlock the Power of AI Summaries for YouTube Videos",
+    "tagline": "Your personal assistant for YouTube",
+    "description": "This will help you when it's too much content. It’s an AI YouTube tool which finds the key points in topics like AI, Business, Finance, News, or Health."
+  },
+  "reviews": "users have used Tube Mind Sync",
+  "testimonials": {
+    "first": {
+      "text": "“Tube Mind Sync's AI summaries have revolutionized the way I consume YouTube content. Now, I can quickly understand the key points of any video, saving me valuable time. Highly recommended!”",
+      "name": "Sara Jonson",
+      "role": "Content Creator"
+    }
+  },
+  "steps": {
+    "title": "How does it work?",
+    "description": "Our AI solution will help you from start to finish.",
+    "step_1": {
+      "title": "Discover",
+      "text": "Upload the Youtube video URL or enter the video title into Tube Mind Sync's intuitive interface."
+    },
+    "step_2": {
+      "title": "Generate",
+      "text": "Our advanced AI algorithms analyze the video content and generate concise summaries, highlighting the essential points."
+    },
+    "step_3": {
+      "title": "Explore",
+      "text": "Navigate through the summarized paragraphs with timestamps, enabling seamless navigation and efficient content consumption."
+    }
+  },
+  "features": {
+    "title": "Unlock the Power of Tube Mind Sync for YouTube Videos",
+    "tagline": "Your personal assistant for YouTube",
+    "description": "Explore the advanced features of Tube Mind Sync designed to revolutionize your YouTube video consumption experience. From accurate AI-generated summaries to seamless navigation and language translation, discover how our platform empowers you to grasp the essence of any video effortlessly.",
+    "feature_1": {
+      "title": "Unlock Key Ideas",
+      "description": "Get the pivotal points and key ideas from any YouTube video, allowing you to grasp the essence of the content effortlessly."
+    },
+    "feature_2": {
+      "title": "Language Translation",
+      "description": "Access translations of summaries in your preferred language with Eightify, eliminating language barriers and expanding your reach."
+    },
+    "feature_3": {
+      "title": "Enhance Navigation",
+      "description": "Navigate through videos with ease using summarized paragraphs with timestamps, enabling efficient content exploration."
+    },
+    "feature_4": {
+      "title": "Time Saving-Solution",
+      "description": "Save valuable time by quickly understanding the essence of lengthy videos, empowering you to focus on what matters most."
+    }
+  },
+  "features_2": {
+    "title": "Unlock the Power of Tube Mind Sync for YouTube Videos",
+    "tagline": "Your personal assistant for YouTube",
+    "description": "Explore the advanced features of Tube Mind Sync designed to revolutionize your YouTube video consumption experience. From accurate AI-generated summaries to seamless navigation and language translation, discover how our platform empowers you to grasp the essence of any video effortlessly.",
+    "feature_1": {
+      "title": "Unlok Key Ideas",
+      "description": "Get the pivotal points and key ideas from any YouTube video, allowing you to grasp the essence of the content effortlessly."
+    },
+    "feature_2": {
+      "title": "Language Translation",
+      "description": "Access translations of summaries in your preferred language with Eightify, eliminating language barriers and expanding your reach."
+    },
+    "feature_3": {
+      "title": "Enhance Navigation",
+      "description": "Navigate through videos with ease using summarized paragraphs with timestamps, enabling efficient content exploration."
+    }
+  },
+  "price": {
+    "facilities_yes": [
+      "TLDR Summaries",
+      "Timestamped Breakdowns",
+      "Key Insights",
+      "Best Quotes",
+      "QA",
+      "40+ Languages"
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": [
+      {
+        "question": "What is Tube Mind Sync?",
+        "answer": "Tube Mind Sync is a revolutionary tool that harnesses advanced AI technology to summarize YouTube videos quickly and effectively, providing concise summaries for easy understanding."
+      },
+      {
+        "question": "Is Tube Mind Sync compatible with mobile devices?",
+        "answer": "Yes, Tube Mind Sync is fully compatible with mobile devices. Whether you're using an iOS device or browsing on Chrome or Safari, you can easily access our summarization tool on the go."
+      },
+      {
+        "question": "How does Tube Mind Sync summarize videos?",
+        "answer": "Tube Mind Sync leverages cutting-edge AI algorithms, including OpenAI GPT, to analyze and condense the key points of YouTube videos. Our technology ensures accurate and comprehensive summaries."
+      },
+      {
+        "question": "Can Tube Mind Sync be used for podcasts and news content?",
+        "answer": "Currently, Tube Mind Sync focuses on summarizing YouTube videos. However, many podcasts and news segments are available on YouTube and can be summarized using our tool."
+      },
+      {
+        "question": "Does Tube Mind Sync support video summarization in multiple languages?",
+        "answer": "Yes, Tube Mind Sync supports video summarization in various languages. With translations available in over 40 languages, language barriers are no longer an issue."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to unlock the power of AI summaries for YouTube videos?",
+    "description": "Get started with Tube Mind Sync, your personal assistant for YouTube. Explore the advanced features of Tube Mind Sync designed to revolutionize your YouTube video consumption experience."
+  }
+}

@@ -1,13 +1,10 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
 
 export const FeaturedOn = () => {
   return (
-    <div className=" py-24 sm:py-32">
+    <div className=" py-10 sm:py-20">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
-        <h2 className="text-center text-lg font-semibold leading-8">
-          Featured on
-        </h2>
+        <h2 className="text-center text-4xl font-semibold pb-5">Featured on</h2>
         <div className="flex gap-5 flex-wrap justify-center">
           <Link
             href="#"

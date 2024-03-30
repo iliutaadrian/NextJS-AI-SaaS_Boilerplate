@@ -1,0 +1,9 @@
+{
+  "title": "Tube Mind Sync",
+  "buttons": {
+    "login": "Login",
+    "logout": "Logout",
+    "get-started": "Get Started",
+    "learn-more": "Learn More"
+  }
+}

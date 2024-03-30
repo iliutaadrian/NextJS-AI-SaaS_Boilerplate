@@ -1,47 +1,44 @@
-import { CloudIcon } from "lucide-react";
+import { LockOpen1Icon } from "@radix-ui/react-icons";
+import { Clock, CloudIcon, Navigation } from "lucide-react";
+import useTranslation from "next-translate/useTranslation";
 
 export const Features = () => {
+  const { t } = useTranslation();
   const features = [
     {
-      name: "Unlock Key Ideas",
-      description:
-        "Get the pivotal points and key ideas from any YouTube video, allowing you to grasp the essence of the content effortlessly.",
+      name: t("dashboard:features.feature_1.title"),
+      description: t("dashboard:features.feature_1.description"),
+      icon: LockOpen1Icon,
+    },
+    {
+      name: t("dashboard:features.feature_2.title"),
+      description: t("dashboard:features.feature_2.description"),
       icon: CloudIcon,
     },
     {
-      name: "Language Translation",
-      description:
-        "Access translations of summaries in your preferred language with Eightify, eliminating language barriers and expanding your reach.",
-      icon: CloudIcon,
+      name: t("dashboard:features.feature_3.title"),
+      description: t("dashboard:features.feature_3.description"),
+      icon: Navigation,
     },
     {
-      name: "Enhanced Navigation",
-      description:
-        "Navigate through videos with ease using summarized paragraphs with timestamps, enabling efficient content exploration.",
-      icon: CloudIcon,
-    },
-    {
-      name: "Time-Saving Solution",
-      description:
-        "Save valuable time by quickly understanding the essence of lengthy videos, empowering you to focus on what matters most.",
-      icon: CloudIcon,
+      name: t("dashboard:features.feature_4.title"),
+      description: t("dashboard:features.feature_4.description"),
+      icon: Clock,
     },
   ];
 
   return (
-    <div className=" py-24 sm:py-32">
+    <div className=" py-10 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className=" font-semibold leading-7 text-primary">Lean faster</h2>
+          <h2 className=" font-semibold leading-7 text-primary">
+            {t("dashboard:features.tagline")}
+          </h2>
           <p className="mt-2 text-3xl font-bold sm:text-4xl">
-            Unlock the Power of Tube Mind Sync{"'"}s Cutting-Edge Features
+            {t("dashboard:features.title")}
           </p>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Explore the advanced features of Tube Mind Sync designed to
-            revolutionize your YouTube video consumption experience. From
-            accurate AI-generated summaries to seamless navigation and language
-            translation, discover how our platform empowers you to grasp the
-            essence of any video effortlessly.
+            {t("dashboard:features.description")}
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
