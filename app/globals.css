@@ -8,10 +8,33 @@ body,
   height: 100%;
 }
 
-h1,
-h2,
+h1 {
+  @apply scroll-m-20;
+  @aply text-4xl;
+  @apply font-bold;
+  @apply tracking-tight;
+  @apply sm:text-5xl;
+}
+
+h2 {
+  @apply scroll-m-20;
+  @apply pb-2;
+  @apply text-3xl;
+  @apply font-semibold;
+  @apply tracking-tight;
+  @apply first:mt-0;
+}
+
 h3 {
-  @apply py-3;
+  @apply scroll-m-20;
+  @apply text-2xl;
+  @apply font-semibold;
+  @apply tracking-tight;
+}
+
+p {
+  @apply leading-7;
+  @apply text-lg;
 }
 
 @layer base {
