@@ -1,49 +1,27 @@
 ## Youtube to Second Brain
-Transform YouTube videos into actionable insights with 
+
+Transform YouTube videos into actionable insights with
+
 - AI-powered summaries,
 - key highlights,
--  memorable quotes.
+- memorable quotes.
 
-  
-Effortlessly assimilate information and build your second brain on **Notion**. 
+Effortlessly assimilate information and build your second brain on **Notion**.
 Elevate your learning experience and save time while staying ahead with MindSync – where AI meets personalized knowledge curation!
 
 ## Technologies Used
 
 - Next.js: A React framework for building server-side rendered and static websites.
-- Pusher: A real-time communication platform that enables bi-directional communication between servers and clients.
 - Tailwind CSS: A utility-first CSS framework for quickly building custom designs.
-- Prisma with PostgreSQL: A modern database toolkit for TypeScript and Node.js.
 - TypeScript: A statically typed superset of JavaScript that compiles to plain JavaScript.
+- Drizzle ORM: An ORM for SQL databases.
+- Neon DB: Free, easy to use database.
+- Clerk: Secure and easy authentication.
+- Stripe: Secure and easy payment.
+- Vercel Analytics: Segment, Snowplow, and Google Analytics.
+- Vercel deploy: Deploy your this app to Vercel.
+- Testing
+- Mail
+- Error Monitoring
 
 ## Installation
-
-Clone the repository and install the dependencies:
-This is a [Next.js](https://nextjs.org/) project
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-
-Functinoalities:
-- file manipulation
-- file generation
-- algo to make this as efficient as possible
-- drizzle orm
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/route.ts`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-
