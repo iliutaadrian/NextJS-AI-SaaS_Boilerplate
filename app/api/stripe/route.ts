@@ -18,6 +18,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { name, price, facilities_yes } = body;
 
+    // use this if you want to create a subscription
     // const userSubscriptionQuery = await db
     //   .select()
     //   .from(UserSubscriptionTable)

@@ -11,8 +11,6 @@ export function Price() {
   const { isSignedIn } = useUser();
   const { t } = useTranslation("dashboard");
 
-  const items = t("price", { returnObjects: true });
-  console.log(items);
   const prices = [
     {
       name: "Starter",
