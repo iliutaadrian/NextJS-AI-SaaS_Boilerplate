@@ -1,4 +1,3 @@
-"use client";
 import { Cta } from "@/components/dashboard/cta";
 import { Faq } from "@/components/dashboard/faq";
 import { FeaturedOn } from "@/components/dashboard/featured_on";

@@ -18,24 +18,38 @@ Elevate your learning experience and save time while staying ahead with MindSync
 - Neon DB: Free, easy to use database.
 - Clerk: Secure and easy authentication.
 - Stripe: Secure and easy payment.
-- Vercel Analytics: Segment, Snowplow, and Google Analytics.
+- Vercel Analytics: Google Analytics alternative for traffic and performance insights
 - Vercel deploy: Deploy your this app to Vercel.
-- SEO: Custom OG, Twitter, and Meta tags.
-- Customer Chat
-- Testing
-- Mail
-- Error Monitoring
+- SEO: Custom OG, Twitter tags.
+- Resend: modern email sending platform with React Email
+- React Email Preview, Colors Preview
+- Crisp: all-in-one business messaging platform for feedback and customer support
+- Jest: Jest is a JavaScript testing framework.
+- Sentry: Error Monitoring, Performance Monitoring, and Session Replay, Code Coverage
 
 ### Next.js SEO Complete Checklist
 
 [https://dminhvu.com/nextjs-seo](SEO complete checklist)
 
-- Meta tags
+- Meta tags: custom OG, Twitter
 - JSON-LD Schema
 - Sitemap
 - robots.txt
 - Link tags
 - Script optimization
 - Image optimization
+
+Email Checklist
+
+- implemented onboarding email with cleark webhooks
+- (https://clerk.com/blog/webhooks-getting-started)[Clerk webhooks]
+
+### TODO:
+
+- add email on clerk register
+- fix hidration problem homepage
+- test pricing tab not working
+- add customer Chat Crisp
+- add error monitoring Sentry, buy credits with alienmode because it throws an error to test
 
 ## Installation
