@@ -12,7 +12,43 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Tube Mind Sync",
-  description: "Talk with your data",
+  description:
+    "Tube Mind Sync - Unlock the Power of AI Summaries for YouTube Videos",
+  keywords: ["youtube", "summary", "youtube summary", "ai summary"],
+  openGraph: {
+    url: "https://tubemindsync.vercel.app/",
+    type: "website",
+    title: "Tube Mind Sync",
+    description:
+      "Tube Mind Sync - Unlock the Power of AI Summaries for YouTube Videos",
+    images: [
+      {
+        url: "https://tubemindsync.vercel.app/thumbnail.png",
+        width: 1200,
+        height: 630,
+        alt: "tubemindsync",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tube Mind Sync",
+    description:
+      "Tube Mind Sync - Unlock the Power of AI Summaries for YouTube Videos",
+    creator: "@iliutaarian",
+    site: "@iliutaarian",
+    images: [
+      {
+        url: "https://tubemindsync.vercel.app/thumbnail.png",
+        width: 1200,
+        height: 630,
+        alt: "tubemindsync",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://tubemindsync.vercel.app/",
+  },
 };
 
 export default function RootLayout({

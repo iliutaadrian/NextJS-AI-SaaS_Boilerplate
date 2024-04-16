@@ -20,8 +20,22 @@ Elevate your learning experience and save time while staying ahead with MindSync
 - Stripe: Secure and easy payment.
 - Vercel Analytics: Segment, Snowplow, and Google Analytics.
 - Vercel deploy: Deploy your this app to Vercel.
+- SEO: Custom OG, Twitter, and Meta tags.
+- Customer Chat
 - Testing
 - Mail
 - Error Monitoring
+
+### Next.js SEO Complete Checklist
+
+[https://dminhvu.com/nextjs-seo](SEO complete checklist)
+
+- Meta tags
+- JSON-LD Schema
+- Sitemap
+- robots.txt
+- Link tags
+- Script optimization
+- Image optimization
 
 ## Installation
