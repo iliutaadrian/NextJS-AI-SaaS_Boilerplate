@@ -28,6 +28,7 @@
     "@radix-ui/react-toast": "^1.1.4",
     "@react-email/components": "0.0.16",
     "@react-email/render": "0.0.12",
+    "@sentry/nextjs": "^7.110.1",
     "@tanstack/react-table": "^8.10.6",
     "@types/lodash": "^4.14.198",
     "@types/node": "20.5.9",

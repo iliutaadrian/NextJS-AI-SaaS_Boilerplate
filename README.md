@@ -50,6 +50,9 @@ Email Checklist
 - fix hidration problem homepage
 - test pricing tab not working
 - add customer Chat Crisp
-- add error monitoring Sentry, buy credits with alienmode because it throws an error to test
+
+Error Monitoring Sentry
+
+- got to /sentry-example-page to test the error
 
 ## Installation
