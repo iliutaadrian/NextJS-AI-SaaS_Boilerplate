@@ -67,7 +67,7 @@ export const WelcomeEmail = () => {
                   Welcome to Tube Mind Sync
                 </Text>
                 <Text className="text-base">
-                  Congratulations! You're joining over 100+ users how want to
+                  Congratulations! You are joining over 100+ users how want to
                   learn more from Youtube Videos.
                 </Text>
               </Row>
