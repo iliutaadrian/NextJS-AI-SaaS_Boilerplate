@@ -53,4 +53,7 @@ Error Monitoring Sentry
 
 - got to /sentry-example-page to test the error
 
+Crisp
+( https://help.crisp.chat/en/article/how-do-i-install-crisp-live-chat-on-nextjs-xh9yse/ )[Crisp install guide]
+
 ## Installation

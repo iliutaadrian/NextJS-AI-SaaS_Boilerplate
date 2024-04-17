@@ -1,12 +1,15 @@
-export default async function RootLayout({
-   children,
-}: {
-    children: React.ReactNode
-}) {
+import dynamic from "next/dynamic";
 
-    return (
-        <div className="h-full">
-            {children}
-        </div>
-    )
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const CrispWithNoSSR = dynamic(() => import("../../components/crisp"));
+  return (
+    <div className="h-full">
+      <CrispWithNoSSR />
+      {children}
+    </div>
+  );
 }
