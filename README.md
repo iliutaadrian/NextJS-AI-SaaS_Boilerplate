@@ -46,9 +46,7 @@ Email Checklist
 
 ### TODO:
 
-- add email on clerk register
 - fix hidration problem homepage
-- test pricing tab not working
 - add customer Chat Crisp
 
 Error Monitoring Sentry

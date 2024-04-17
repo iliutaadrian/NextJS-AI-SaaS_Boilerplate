@@ -35,26 +35,30 @@ export const buyCredits = async (
   credits: number,
   stripeCustomerId: string,
 ) => {
-  const userApiLimits = await db
-    .select()
-    .from(UserAPILimitTable)
-    .where(eq(UserAPILimitTable.user_id, userId));
-
-  if (userApiLimits.length === 0) {
-    await db.insert(UserAPILimitTable).values({
-      user_id: userId,
-      limit: credits,
-      used: 0,
-      stripeCustomerId: stripeCustomerId,
-    });
-  } else {
-    await db
-      .update(UserAPILimitTable)
-      .set({
-        limit: credits + userApiLimits[0].limit,
-        stripeCustomerId: stripeCustomerId,
-      })
+  try {
+    const userApiLimits = await db
+      .select()
+      .from(UserAPILimitTable)
       .where(eq(UserAPILimitTable.user_id, userId));
+
+    if (userApiLimits.length === 0) {
+      await db.insert(UserAPILimitTable).values({
+        user_id: userId,
+        limit: credits,
+        used: 0,
+        stripeCustomerId: stripeCustomerId,
+      });
+    } else {
+      await db
+        .update(UserAPILimitTable)
+        .set({
+          limit: credits + userApiLimits[0].limit,
+          stripeCustomerId: stripeCustomerId,
+        })
+        .where(eq(UserAPILimitTable.user_id, userId));
+    }
+  } catch (error: any) {
+    throw new Error(`Webhook Error: ${error.message}`);
   }
 };
 
