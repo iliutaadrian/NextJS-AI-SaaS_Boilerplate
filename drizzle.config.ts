@@ -1,7 +1,4 @@
 import type { Config } from "drizzle-kit";
-import dotenv from "dotenv";
-dotenv.config({ path: ".env" });
-
 export default {
   driver: "pg",
   schema: "./lib/db/index.ts",

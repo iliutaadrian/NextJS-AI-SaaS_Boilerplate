@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextTranslate = require("next-translate-plugin");
+const dotenv = require("dotenv");
 
 const nextConfig = nextTranslate({
   images: {
@@ -61,3 +62,7 @@ module.exports = withSentryConfig(
     automaticVercelMonitors: true,
   },
 );
+
+dotenv.config({ path: `.env.${process.env.ENV}` });
+
+console.log(process.env);

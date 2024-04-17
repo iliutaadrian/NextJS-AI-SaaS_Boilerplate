@@ -9,17 +9,15 @@ Transform YouTube videos into actionable insights with
 Effortlessly assimilate information and build your second brain on **Notion**.
 Elevate your learning experience and save time while staying ahead with MindSync – where AI meets personalized knowledge curation!
 
-## Technologies Used
+## Technologies Used and Plugings
 
-- Next.js: A React framework for building server-side rendered and static websites.
+- Next.js 13: A React framework for building server-side rendered and static websites.
 - Tailwind CSS: A utility-first CSS framework for quickly building custom designs.
-- TypeScript: A statically typed superset of JavaScript that compiles to plain JavaScript.
-- Drizzle ORM: An ORM for SQL databases.
-- Neon DB: Free, easy to use database.
+- Neon DB: Free, easy to use database with Drizzle ORM on top.
+- I18n: Multi-language support with Next Translate
 - Clerk: Secure and easy authentication.
 - Stripe: Secure and easy payment.
 - Vercel Analytics: Google Analytics alternative for traffic and performance insights
-- Vercel deploy: Deploy your this app to Vercel.
 - SEO: Custom OG, Twitter tags.
 - Resend: modern email sending platform with React Email
 - React Email Preview, Colors Preview
@@ -46,8 +44,12 @@ Email Checklist
 
 ### TODO:
 
-- fix hidration problem homepage
-- add customer Chat Crisp
+- test full flow app
+- make documentation for the app
+  Shadcn,
+  present flow with AI
+  oneclick deploy to vercel
+  easy change between multiple env files
 
 Error Monitoring Sentry
 
