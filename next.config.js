@@ -62,7 +62,4 @@ module.exports = withSentryConfig(
     automaticVercelMonitors: true,
   },
 );
-
 dotenv.config({ path: `.env.${process.env.ENV}` });
-
-console.log(process.env);

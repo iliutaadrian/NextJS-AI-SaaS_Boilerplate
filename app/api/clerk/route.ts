@@ -7,7 +7,6 @@ export async function POST(request: Request) {
   if (payload.type === "user.created") {
     if (payload.data.email_addresses[0]) {
       const email = payload.data.email_addresses[0].email_address;
-      console.log(email);
       await sendWelcomeEmail(email);
     }
   }
